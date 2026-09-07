@@ -1,6 +1,6 @@
 <header>
     <nav>
-        <a href="{{route("home")}}">home</a>
-        <a href="{{route("news.index")}}">News</a>
+        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('news.index') }}">News</a>
     </nav>
 </header>
