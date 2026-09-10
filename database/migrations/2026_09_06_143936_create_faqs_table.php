@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('view_count')->nullable();
             $table->integer('faq_category_id')->unique();
             $table->string('question');
-            $table->text('anser')->nullable();
+            $table->text('answer')->nullable();
             $table->timestamps();
         });
     }
