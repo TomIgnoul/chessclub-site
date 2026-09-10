@@ -6,9 +6,9 @@
     <h1>News</h1>
 
     @foreach($news as $item)
-        <articl>
+        <article>
             <h2>{{ $item->title }}</h2>
             <p>{{ $item->content }}</p>
-        </articl>
+        </article>
     @endforeach
 @endsection
