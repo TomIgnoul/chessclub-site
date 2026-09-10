@@ -7,4 +7,5 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('news', [\App\Http\Controllers\NewsController::class, 'index'])->name('news.index');
+Route::get('news', [NewsController::class, 'index'])->name('news.index');
+Route::get('faqs', [\App\Models\Faq::class, 'index'])->name('faqs.index');

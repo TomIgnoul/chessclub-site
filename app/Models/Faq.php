@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Faq extends Model
 {
-    protected $fillable = ['view_count', 'faq_category_id', 'question', 'answer'];
+
+    public function index()
+    {
+        protected $fillable = ['view_count', 'faq_category_id', 'question', 'answer'];
+
+    }
 }
