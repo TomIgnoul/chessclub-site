@@ -8,4 +8,4 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('news', [NewsController::class, 'index'])->name('news.index');
-Route::get('faqs', [\App\Models\Faq::class, 'index'])->name('faqs.index');
+Route::get('faqs', [\App\Http\Controllers\FaqController::class, 'index'])->name('faqs.index');

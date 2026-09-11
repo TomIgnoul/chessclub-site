@@ -5,7 +5,7 @@
 @section('content')
     <h1>Faqs</h1>
 
-    @foreach(Faqs as $item)
+    @foreach($faqs as $item)
         <article>
             <h2>{{ $item->question }}</h2>
             <p>{{ $item->answer }}</p>
