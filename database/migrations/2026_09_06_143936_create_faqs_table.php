@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('faqs', function (Blueprint $table) {
             $table->id();
             $table->integer('view_count')->nullable();
-            $table->integer('faq_category_id')->unique();
+            $table->integer('faq_category_id')->constrained()->cascadeOnDelete();
             $table->string('question');
             $table->text('answer')->nullable();
             $table->timestamps();
